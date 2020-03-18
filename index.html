@@ -50,6 +50,62 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
+	<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
+
 	</head>
 	<body>
 	<div id="colorlib-page">
@@ -79,12 +135,6 @@
 
 			<div class="colorlib-footer">
 				<p><small>&copy;Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved.</small></p>
-				<ul>
-					<li><a href="#"><i class="icon-facebook2"></i></a></li>
-					<li><a href="#"><i class="icon-twitter2"></i></a></li>
-					<li><a href="#"><i class="icon-instagram"></i></a></li>
-					<li><a href="#"><i class="icon-linkedin2"></i></a></li>
-				</ul>
 			</div>
 
 		</aside>
@@ -102,7 +152,6 @@
 					   					<div class="desc">
 						   					<h1>Hi! <br>I'm Steven</h1>
 						   					<h2>I'm a software developer who has experienced in building awesome and effective website and software for about 3+ years.</h2>
-												<p><a class="btn btn-primary btn-learn">Download CV <i class="icon-download4"></i></a></p>
 											</div>
 					   				</div>
 					   			</div>
@@ -118,7 +167,6 @@
 					   					<div class="desc">
 						   					<h1>I am <br>a Software Developer</h1>
 												<h2></h2>
-												<p><a class="btn btn-primary btn-learn">View Portfolio <i class="icon-briefcase3"></i></a></p>
 											</div>
 					   				</div>
 					   			</div>
@@ -417,93 +465,63 @@
 					</div>
 					<div class="row">
 						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="project" style="background-image: url(images/img-1.jpg);">
-								<div class="desc">
-									<div class="con">
-										<h3><a href="work.html">Work 01</a></h3>
-										<span>Website</span>
-										<p class="icon">
-											<span><a href="#"><i class="icon-share3"></i></a></span>
-											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
-										</p>
-									</div>
-								</div>
+							<div class="photography-entry">
+								<a class="photography-img"><img src="images/img-1.jpg" class="img-responsive"></a>
 							</div>
 						</div>
 						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-							<div class="project" style="background-image: url(images/img-2.jpg);">
-								<div class="desc">
-									<div class="con">
-										<h3><a href="work.html">Work 02</a></h3>
-										<span>Animation</span>
-										<p class="icon">
-											<span><a href="#"><i class="icon-share3"></i></a></span>
-											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
-										</p>
-									</div>
-								</div>
+							<div class="photography-entry">
+								<a class="photography-img"><img src="images/img-2.jpg" class="img-responsive"></a>
 							</div>
 						</div>
 						<div class="col-md-6 animate-box" data-animate-effect="fadeInTop">
-							<div class="project" style="background-image: url(images/img-3.jpg);">
-								<div class="desc">
-									<div class="con">
-										<h3><a href="work.html">Work 03</a></h3>
-										<span>Illustration</span>
-										<p class="icon">
-											<span><a href="#"><i class="icon-share3"></i></a></span>
-											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
-										</p>
-									</div>
-								</div>
+							<div class="photography-entry">
+								<a class="photography-img"><img src="images/img-3.jpg" class="img-responsive"></a>
 							</div>
 						</div>
 						<div class="col-md-6 animate-box" data-animate-effect="fadeInBottom">
-							<div class="project" style="background-image: url(images/img-4.jpg);">
-								<div class="desc">
-									<div class="con">
-										<h3><a href="work.html">Work 04</a></h3>
-										<span>Application</span>
-										<p class="icon">
-											<span><a href="#"><i class="icon-share3"></i></a></span>
-											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
-										</p>
-									</div>
-								</div>
+							<div class="photography-entry">
+								<a class="photography-img"><img src="images/img-4.jpg" class="img-responsive"></a>
 							</div>
 						</div>
 						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="project" style="background-image: url(images/img-5.jpg);">
-								<div class="desc">
-									<div class="con">
-										<h3><a href="work.html">Work 05</a></h3>
-										<span>Graphic, Logo</span>
-										<p class="icon">
-											<span><a href="#"><i class="icon-share3"></i></a></span>
-											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
-										</p>
-									</div>
-								</div>
+							<div class="photography-entry">
+								<a class="photography-img"><img src="images/img-5.jpg" class="img-responsive"></a>
 							</div>
 						</div>
 						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-							<div class="project" style="background-image: url(images/img-6.jpg);">
-								<div class="desc">
-									<div class="con">
-										<h3><a href="work.html">Work 06</a></h3>
-										<span>Web Design</span>
-										<p class="icon">
-											<span><a href="#"><i class="icon-share3"></i></a></span>
-											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
-										</p>
-									</div>
-								</div>
+							<div class="photography-entry">
+								<a class="photography-img"><img src="images/img-6.jpg" class="img-responsive"></a>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInTop">
+							<div class="photography-entry">
+								<a class="photography-img"><img src="images/img-7.jpg" class="img-responsive"></a>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInBottom">
+							<div class="photography-entry">
+								<a class="photography-img"><img src="images/img-8.jpg" class="img-responsive"></a>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="photography-entry">
+								<a class="photography-img"><img src="images/img-9.jpg" class="img-responsive"></a>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="photography-entry">
+								<a class="photography-img"><img src="images/img-10.jpg" class="img-responsive"></a>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInTop">
+							<div class="photography-entry">
+								<a class="photography-img"><img src="images/img-11.jpg" class="img-responsive"></a>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInBottom">
+							<div class="photography-entry">
+								<a class="photography-img"><img src="images/img-12.jpg" class="img-responsive"></a>
 							</div>
 						</div>
 					</div>
@@ -519,36 +537,37 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="photography-entry">
-								<a class="photography-img"><img src="images/photography-1.jpg" class="img-responsive"></a>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInRight">
-							<div class="photography-entry">
-								<a class="photography-img"><img src="images/photography-3.jpg" class="img-responsive"></a>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="photography-entry">
-								<a class="photography-img"><img src="images/photography-2.jpg" class="img-responsive"></a>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="photography-entry">
-								<a class="photography-img"><img src="images/photography-4.jpg" class="img-responsive"></a>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInRight">
-							<div class="photography-entry">
-								<a class="photography-img"><img src="images/photography-2.jpg" class="img-responsive"></a>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="photography-entry">
-								<a class="photography-img"><img src="images/photography-3.jpg" class="img-responsive"></a>
-							</div>
-						</div>
+						<div class="column">
+					    <img src="images/photography-1.jpg" style="width:100%">
+					    <img src="images/photography-2.jpg" style="width:100%">
+					    <img src="images/photography-3.jpg" style="width:100%">
+					    <img src="images/photography-4.jpg" style="width:100%">
+							<img src="images/photography-5.jpg" style="width:100%">
+					  </div>
+					  <div class="column">
+							<img src="images/photography-6.jpg" style="width:100%">
+							<img src="images/photography-7.jpg" style="width:100%">
+					    <img src="images/photography-8.jpg" style="width:100%">
+					    <img src="images/photography-9.jpg" style="width:100%">
+					    <img src="images/photography-10.jpg" style="width:100%">
+							<img src="images/photography-11.jpg" style="width:100%">
+					  </div>
+					  <div class="column">
+							<img src="images/photography-12.jpg" style="width:100%">
+							<img src="images/photography-13.jpg" style="width:100%">
+							<img src="images/photography-14.jpg" style="width:100%">
+					    <img src="images/photography-15.jpg" style="width:100%">
+							<img src="images/photography-16.jpg" style="width:100%">
+							<img src="images/photography-23.jpg" style="width:100%">
+					  </div>
+					  <div class="column">
+							<img src="images/photography-17.jpg" style="width:100%">
+							<img src="images/photography-18.jpg" style="width:100%">
+							<img src="images/photography-19.jpg" style="width:100%">
+							<img src="images/photography-20.jpg" style="width:100%">
+							<img src="images/photography-21.jpg" style="width:100%">
+							<img src="images/photography-22.jpg" style="width:100%">
+					  </div>
 					</div>
 				</div>
 			</section>
